@@ -12,10 +12,10 @@
     {
       "identity" : "mqtt-nio",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/swift-server-community/mqtt-nio.git",
+      "location" : "https://github.com/sroebert/mqtt-nio.git",
       "state" : {
-        "revision" : "29b5cece276e493db8463fbaf21f9bcd7a4c3225",
-        "version" : "2.7.0"
+        "revision" : "ad1f0bc339a6df89a28b419cdd452b0df584423d",
+        "version" : "2.8.1"
       }
     },
     {

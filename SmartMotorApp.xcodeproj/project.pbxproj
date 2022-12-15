@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		198974712947993C0052FE26 /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 198974702947993C0052FE26 /* MQTTNIO */; };
+		195E24A3294BB8930092B780 /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = 195E24A2294BB8930092B780 /* AppCore */; };
+		19C419D22949080200038A6F /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 19C419D12949080200038A6F /* MQTTNIO */; };
 		49063ED32941ED3300D6788A /* SmartMotorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063ED22941ED3300D6788A /* SmartMotorAppApp.swift */; };
 		49063ED52941ED3300D6788A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063ED42941ED3300D6788A /* ContentView.swift */; };
 		49063ED72941ED3500D6788A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49063ED62941ED3500D6788A /* Assets.xcassets */; };
@@ -55,7 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198974712947993C0052FE26 /* MQTTNIO in Frameworks */,
+				19C419D22949080200038A6F /* MQTTNIO in Frameworks */,
+				195E24A3294BB8930092B780 /* AppCore in Frameworks */,
 				49063EFF2941EE3C00D6788A /* ComposableArchitecture in Frameworks */,
 				49063F012941EE3C00D6788A /* Dependencies in Frameworks */,
 			);
@@ -78,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195E24A1294BB8930092B780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49063EC62941ED3300D6788A = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +95,7 @@
 				49063EE22941ED3600D6788A /* SmartMotorAppTests */,
 				49063EEC2941ED3600D6788A /* SmartMotorAppUITests */,
 				49063ED02941ED3300D6788A /* Products */,
+				195E24A1294BB8930092B780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +164,8 @@
 			packageProductDependencies = (
 				49063EFE2941EE3C00D6788A /* ComposableArchitecture */,
 				49063F002941EE3C00D6788A /* Dependencies */,
-				198974702947993C0052FE26 /* MQTTNIO */,
+				19C419D12949080200038A6F /* MQTTNIO */,
+				195E24A2294BB8930092B780 /* AppCore */,
 			);
 			productName = SmartMotorApp;
 			productReference = 49063ECF2941ED3300D6788A /* SmartMotorApp.app */;
@@ -230,7 +241,7 @@
 			mainGroup = 49063EC62941ED3300D6788A;
 			packageReferences = (
 				49063EFD2941EE3C00D6788A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				1989746F2947993C0052FE26 /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+				19C419D02949080200038A6F /* XCRemoteSwiftPackageReference "mqtt-nio" */,
 			);
 			productRefGroup = 49063ED02941ED3300D6788A /* Products */;
 			projectDirPath = "";
@@ -602,12 +613,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1989746F2947993C0052FE26 /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+		19C419D02949080200038A6F /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/swift-server-community/mqtt-nio.git";
+			repositoryURL = "https://github.com/sroebert/mqtt-nio.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.0;
+				minimumVersion = 2.8.1;
 			};
 		};
 		49063EFD2941EE3C00D6788A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
@@ -621,9 +632,13 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		198974702947993C0052FE26 /* MQTTNIO */ = {
+		195E24A2294BB8930092B780 /* AppCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1989746F2947993C0052FE26 /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = AppCore;
+		};
+		19C419D12949080200038A6F /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19C419D02949080200038A6F /* XCRemoteSwiftPackageReference "mqtt-nio" */;
 			productName = MQTTNIO;
 		};
 		49063EFE2941EE3C00D6788A /* ComposableArchitecture */ = {
